@@ -30,6 +30,9 @@ body {
   .box-form div {
     height: auto;
   }
+  .box-form div1 {
+    height: auto;
+  }
   .box-form .left {
     color: #FFFFFF;
     background-size: cover;
