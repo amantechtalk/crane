@@ -55,16 +55,17 @@ const LandingPage = () => {
 
     <div className="am"  >
         <p className="heading">Mobi Lift</p>
+     
+        <div>
+    
         <nav className="nav-links">
         <a href="#about-us">About Us</a>
         <a href="#services">Services</a>
         <a href="#contact">Contact</a>
         <a href="#faq">FAQ</a>
       </nav>
-        <div>
-    
-      
     </div>
+   
         <div className="imagealign">
           <p >   <i> Rent top <span ><span > quality</span><br></br></span> equipments across India</i> <br></br>
           
@@ -81,7 +82,7 @@ const LandingPage = () => {
           </p>
           <br></br>
        
-         <img  src="/images/construction-site-building.jpg" alt={loadTypes[6].name} width="20%"  height="20%" />
+          <img  src="/images/construction-site-building.jpg" alt={loadTypes[6].name} width="40%"  height="30%" />
          </div>
          
          <h3 center>Commonly Leased Equipments</h3>
