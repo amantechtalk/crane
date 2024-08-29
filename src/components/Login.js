@@ -15,6 +15,7 @@ function Login() {
 
   return (
     <div  class="box-form">
+     
     	<div class="left">
 		<div class="overlay">
     <h1>Crane World.</h1>
@@ -30,7 +31,7 @@ function Login() {
 
      
       <div class="right">
-      <h2>Login</h2>
+      <h4>Login</h4>
       <form onSubmit={handleLogin}>
         <div className="form-group">
           <label>Email:</label>

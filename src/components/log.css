@@ -12,7 +12,7 @@ body {
     width: 80%;
     background: #FFFFFF;
     border-radius: 10px;
-    overflow: hidden;
+    overflow: auto;
     display: flex;
     flex: 1 1 100%;
     align-items: stretch;
