@@ -81,7 +81,7 @@ const LandingPage = () => {
           </p>
           <br></br>
        
-         <img  src="/images/construction-site-building.jpg" alt={loadTypes[6].name} width="40%"  height="40%" />
+         <img  src="/images/construction-site-building.jpg" alt={loadTypes[6].name} width="20%"  height="20%" />
          </div>
          
          <h3 center>Commonly Leased Equipments</h3>
