@@ -42,7 +42,7 @@
     color: #FFFFFF;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image:url("http://localhost:3000/images/image.jpg");
+    background-image:'images/image.jpg';
     background-position: center;
     
 
