@@ -208,6 +208,11 @@
 
   
 }
+.imagegrid img{
+
+  width:100px;
+  height: 65px;
+}
 
 .imagegrid1{
   background-color:#f7f7f7;
@@ -229,6 +234,11 @@
 .imagegrid1  img{
 
   margin: 10px;
+
+    width:300px;
+    height: 210px;
+ 
+  
 
 }
 
@@ -279,11 +289,12 @@
 
     .imagegrid{
 
-      margin-left: 5%;
+      
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-      gap: 20px; /* Space between grid items */
-      padding: 20px;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 0px; /* Space between grid items */
+      padding: 0px;
+      
      
       
     
@@ -294,9 +305,9 @@
       background-color:#f7f7f7;
     
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-      gap: 20px; /* Space between grid items */
-      padding: 20px;
+      grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+      gap: 2px; /* Space between grid items */
+      padding: 2px;
     
     
     }
@@ -312,7 +323,56 @@
       
     
     
+    }.imagegrid1  p{
+      padding: 3px;
+      display: flex;
+     margin: -10px;
+      background-color:#f7f7f7;
+    
     }
+    .imagegrid  p{
+      margin: 4px;
+      padding: 3px;
+      display: flex;
+      background-color:#f7f7f7;
+    
+    }
+
+
+    
+.imagegrid1  img{
+
+  margin: 10px;
+
+    width:50px;
+    height: 30px;
+ 
+  
+
+}
+
+
+
+.imagegrid  img{
+
+  margin: 10px;
+
+    width:50px;
+    height: 30px;
+ 
+  
+
+}
+
+.imagegrid h5{
+
+  font-size: 12px;
+}
+.imagegrid1 h5{
+
+  font-size: 12px;
+}
+
 
   }
 
@@ -571,7 +631,7 @@ select{
   
   .nav-links a {
     text-decoration: none;
-    color: #000;
+    color: #fff;
     font-size: 12px;
     padding: 0px;
   }
@@ -580,6 +640,8 @@ select{
     display: block;
   }
 
+
+  
   .nav-links {
     display: none;
     flex-direction: column;

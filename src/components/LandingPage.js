@@ -33,7 +33,7 @@ const LandingPage = () => {
   for (let i = 1; i < 6; i++) {
     loadItems2.push(
       
-       <p><a href='/request'><img src={loadTypes[i].image} alt={loadTypes[i].name} width="100" height="65" /></a>
+       <p><a href='/request'><img src={loadTypes[i].image} alt={loadTypes[i].name} /></a>
         <h5>{loadTypes[i].name}</h5></p> 
     
   
@@ -44,7 +44,7 @@ const LandingPage = () => {
   for (let i = 0; i < 3; i++) {
     loadlocationItems.push(
       
-       <p><img src={loadlocation[i].image}  width="300" height="210" /><h5>{loadlocation[i].name}</h5> </p> 
+       <p><img src={loadlocation[i].image}   /><h5>{loadlocation[i].name}</h5> </p> 
         
    
   
