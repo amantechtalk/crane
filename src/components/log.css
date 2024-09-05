@@ -42,7 +42,7 @@
     color: #FFFFFF;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image:'images/image.jpg';
+    background-image:url("http://crane-six.vercel.app/images/image.jpg");
     background-position: center;
     
 
@@ -388,7 +388,7 @@ select{
   align-items: center;
   display: flex;
   flex-direction: column; 
-  background-image:url("http://localhost:3000/images/image.jpg");
+  background-image:url("http://crane-six.vercel.app/images/image.jpg");
   background-size: cover; /* Ensures the image covers the entire element */
   background-position: center; /* Centers the image */
   background-repeat: no-repeat;
@@ -406,7 +406,7 @@ select{
     align-items: center;
     display: flex;
     flex-direction: column; 
-    background-image:url("http://localhost:3000/images/image.jpg");
+    background-image:url("http://crane-six.vercel.app/images/image.jpg");
     background-size: cover; /* Ensures the image covers the entire element */
     background-position: center; /* Centers the image */
     background-repeat: no-repeat;
