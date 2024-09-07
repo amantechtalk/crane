@@ -4,11 +4,11 @@ import './log.css';
 import Navbar from './nav';
 const loadTypes = [
   { id: 1, name: 'Heavy Machinery', details: 'Used for lifting very heavy equipment or structures',load:'100kg',price:'1000rs',power:'1000hp', image: '/images/crane1.jpg' },
-  { id: 2, name: 'Boom Lifts:', details: 'Ideal for moving large quantities of building materials.',load:'200kg',price:'2000rs',power:'2000hp', image: '/images/constructions.jpg' },
-  { id: 3, name: 'Telescopic Cranes:', details: 'Specialized for handling shipping containers.',load:'300kg',price:'3000rs',power:'3000hp', image: '/images/crane1.jpg' },
-  { id: 4, name: 'Crane-Mounted Boom Lifts and Man Lifts:', details: 'Capable of lifting and transporting vehicles.',load:'400kg',price:'4000rs',power:'4000hp', image: '/images/crane5.jpg' },
-  { id: 5, name: 'Bulk Goods', details: 'Designed for bulk cargo like grain, coal, etc.',load:'500kg',price:'5000rs',power:'5000hp', image: '/images/crane4.jpg' },
-  { id: 6, name: 'Specialized Equipment', details: 'For lifting specific, custom-designed equipment.',load:'600kg',price:'6000rs',power:'6000hp', image: '/images/crane5.jpg' },
+  { id: 2, name: 'Boom Lifts:', details: 'Ideal for moving large quantities of building materials.',load:'200kg',price:'2000rs',power:'2000hp', image: '/images/crane2.jpg' },
+  { id: 3, name: 'Telescopic Cranes:', details: 'Specialized for handling shipping containers.',load:'300kg',price:'3000rs',power:'3000hp', image: '/images/crane3.jpg' },
+  { id: 4, name: 'Crane-Mounted Boom :', details: 'Capable of lifting and transporting vehicles.',load:'400kg',price:'4000rs',power:'4000hp', image: '/images/crane4.jpg' },
+  { id: 5, name: 'Bulk Goods', details: 'Designed for bulk cargo like grain, coal, etc.',load:'500kg',price:'5000rs',power:'5000hp', image: '/images/crane5.jpg' },
+  { id: 6, name: 'Specialized Equipment', details: 'For lifting specific, custom-designed equipment.',load:'600kg',price:'6000rs',power:'6000hp', image: '/images/crane6.jpg' },
   { id: 7, name: 'Fragile Items', details: 'Handles delicate items with extra care.',load:'700kg',price:'7000rs',power:'7000hp', image: '/images/crane2.jpg' },
   { id: 8, name: 'Oversized Loads', details: 'Capable of managing oversized and heavy loads.',load:'800kg',price:'8000rs',power:'8000hp', image: '/images/crane1.jpg' },
   { id: 9, name: 'Oversized Loads', details: 'Capable of managing oversized and heavy loads.',load:'800kg',price:'8000rs',power:'8000hp', image: '/images/crane12.jpg' },
@@ -18,6 +18,9 @@ const loadlocation = [
   { id: 1   , name: 'Pune',  image: '/images/pune.jpg' },
   { id: 2, name: 'Mumbai',  image: '/images/mumbai.jpg' },
   { id: 3, name: 'Ahemdabad', image: '/images/ahemdabad.jpg' },
+  { id: 4  , name: 'shimla',  image: '/images/shimla.jpg' },
+  { id: 5, name: 'srinagar',  image: '/images/srinagar.jpg' },
+  { id: 6, name: 'delhi', image: '/images/delhi.jpg' }
  
 ];
 const loadTypeImage = loadTypes[0].image;
@@ -41,21 +44,16 @@ const LandingPage = () => {
     );
   }
   const loadlocationItems = [];
-  for (let i = 0; i < 3; i++) {
+  for (let i = 0; i < 6; i++) {
     loadlocationItems.push(
       
        <p><img src={loadlocation[i].image}   /><h5>{loadlocation[i].name}</h5> </p> 
-        
-   
-  
+
      
     );
   }
 
   return (
-    
-
-
 
     <div className="am"  >
     
@@ -85,14 +83,16 @@ const LandingPage = () => {
       
       </div>
       </div>
-
+     
        <h2 >Popular Equipment</h2>
-      
+     
       <div className='imagegrid'>     
        {loadItems2}
       </div>
+      <div style={{backgroundColor:'#f7f7f7',borderRadius:'8px'}}>
        <h2>  Popular Rental Locations </h2>  
-       <h4>Rent equipment from over 1000+ rental partners across India.</h4> 
+       <p  style={{paddingLeft:'8%'}}>Rent equipment from over 1000+ rental partners across India.</p> 
+       </div>
         <div className='imagegrid1'>
           {loadlocationItems}
         </div>

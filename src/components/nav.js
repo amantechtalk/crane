@@ -35,7 +35,8 @@ const Navbar = () => {
     <div style={{ 
       display: 'flex', 
       flexDirection: 'row'}}> 
-    <img  src='/images/icon.png' width="140" height="90"></img>
+   {isDesktop && <img  src='/images/icon.png' width="140" height="90"></img>}
+   {isMobile && <img  src='/images/icon.png' width="80" height="50"></img>}
     {isDesktop && <nav className="nav-links">
     
     <a href="#about-us">About Us</a>
