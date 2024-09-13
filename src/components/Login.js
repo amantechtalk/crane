@@ -1,16 +1,36 @@
-import React, { useState } from 'react';
+import React, { useState ,useContext } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import './log.css';
+
+import AuthContext from './AuthContext';  
+
 function Login() {
-  const [email, setEmail] = useState('');
+  const [phoneNumber, setPhoneNumber] = useState('');
   const [password, setPassword] = useState('');
   const navigate = useNavigate();
+  
+  const { login } = useContext(AuthContext);
+  
+  const { logout} = useContext(AuthContext);
 
-  const handleLogin = (e) => {
+
+  const handleLogin =  async(e) => {
     e.preventDefault();
+
+    const success = await login(phoneNumber, password);
+   
+    
+    if (success) {
+      navigate('/landing-page'); 
+   
+    } else {
+      const success1= await logout();
+     
+      alert('Login failed');
+    }
     // Implement login logic here (e.g., API call)
-    console.log('Logging in with', { email, password });
-    navigate('/landing-page'); // Navigate to the home page after successful login
+   
+    // Navigate to the home page after successful login
   };
 
   return (
@@ -36,9 +56,9 @@ function Login() {
         <div className="form-group">
           <label>Email:</label>
           <input 
-            type="email" 
-            value={email} 
-            onChange={(e) => setEmail(e.target.value)} 
+            type="number" 
+            value={phoneNumber} 
+            onChange={(e) => setPhoneNumber(e.target.value)} 
             required 
           />
         </div>

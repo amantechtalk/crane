@@ -1,6 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState ,useContext } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import './log.css';
+
+import AuthContext from './AuthContext';  
+
 function Signup() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -8,15 +11,25 @@ function Signup() {
   const [mobile, setMobile] = useState('');
   const navigate = useNavigate();
 
-  const handleSignup = (e) => {
+  const { register } = useContext(AuthContext);
+  
+  const handleSignup = async (e) => {
     e.preventDefault();
     if (password !== confirmPassword) {
       alert("Passwords do not match");
       return;
     }
+
+    const success = await register(mobile, password);
+    if (success) {
+      navigate('/login'); 
+      
+    } else {
+      alert('Registration failed');
+    }
     // Implement signup logic here (e.g., API call)
-    console.log('Signing up with', { email, password });
-    navigate('/'); // Navigate to login page after successful signup
+    console.log('Signing up with', { mobile, password });
+    // Navigate to login page after successful signup
   };
 
   return (
