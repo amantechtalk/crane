@@ -7,7 +7,7 @@ import LandingPage from './components/LandingPage';
 import Request from './components/Request';
 import { AuthProvider } from './components/AuthContext';
 import ProtectedRoute from './components/ProtectedRoute';
-
+import Logout from './components/logout';
 import {
   isMobile,
   isTablet,
@@ -31,10 +31,11 @@ function App() {
     <Route path="/*" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/forgot-password" element={<ForgotPassword />} />
-        
-          <Route path="/request" element={<Request />} />
+          <Route path="/logout" element={<Logout />} />
+          
           <Route element={<ProtectedRoute />}>
             <Route path="/landing-page" element={<LandingPage />} />
+            <Route path="/request" element={<Request />} />
           </Route>    
   </Routes>
   

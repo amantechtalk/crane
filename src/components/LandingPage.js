@@ -1,5 +1,6 @@
 // src/components/LandingPage.js
-import React, { useState } from 'react';
+
+import React, { useState ,useContext } from 'react';
 import './log.css';
 import Navbar from './nav';
 const loadTypes = [
@@ -28,9 +29,8 @@ const loadTypeImage = loadTypes[0].image;
 const LandingPage = () => {
   const [selectedLoad, setSelectedLoad] = useState(null);
 
-  const handleSelect = (load) => {
-    setSelectedLoad(load);
-  };
+
+ 
 
 
   const loadItems2 = [];
