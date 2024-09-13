@@ -32,7 +32,7 @@ export const AuthProvider = ({ children }) => {
 
   const register = async (phoneNumber, password) => {
     try {
-      await axios.post('http://13.235.114.115:9000/auth/register', { phoneNumber, password });
+      await axios.post('https://13.235.114.115:9000/auth/register', { phoneNumber, password });
       return true;
     } catch (error) {
       console.error('Registration failed:', error);
