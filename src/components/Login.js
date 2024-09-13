@@ -54,7 +54,7 @@ function Login() {
       <h4>Login</h4>
       <form onSubmit={handleLogin}>
         <div className="form-group">
-          <label>Email:</label>
+          <label>Phone:</label>
           <input 
             type="number" 
             value={phoneNumber} 
